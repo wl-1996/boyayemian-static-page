@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style: none;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+.inner_c {
+    width: 1000px;
+    margin: 0 auto;
+    /*border: 1px solid red;*/
+    overflow: hidden;
+}
+
+.nomargin {
+    margin: 0 !important;
+}
+
+body {
+    font-size: 14px;
+    color: black;
+    font-family: "Microsoft", "Simsun", "Arial";
+}
+
+.header {
+    height: 58px;
+    background: #191D3A;
+    color: white;
+}
+
+.header .logo {
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.header .logo h1 {
+    width: 158px;
+    height: 35px;
+    /*border: 1px solid blue;*/
+    background: url("./images/icons.png") no-repeat 0 0;
+    text-indent: -999em;
+}
+
+.header .nav {
+    width: 603px;
+    height: 58px;
+    float: left;
+    margin-left: 48px;
+    /*border: 1px solid yellow;*/
+}
+
+.header .nav ul li {
+    float: left;
+    width: 86px;
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+    /*border: 1px solid green;*/
+
+}
+
+.header .nav ul li a {
+    text-decoration: none;
+    color: #818496;
+    display: block;
+    height: 58px;
+    display: block;
+
+}
+
+.header .nav ul li.first a {
+    color: #E2E4ED;
+    background: #252947;
+}
+
+.header .nav ul li a:hover {
+    background: #252947;
+    color: #E2E4ED;
+}
+
+.header .joinus {
+    float: left;
+    width: 100px;
+    height: 34px;
+    margin-left: 52px;
+    margin-top: 12px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.header .joinus a {
+    text-decoration: none;
+    color: #FFFFFF;
+    height: 34px;
+    display: block;
+    background: #38B774;
+    border-radius: 5px;
+
+}
+
+.header .joinus a:hover {
+    background: greenyellow;
+}
+
+.banner {
+    position: relative;
+    height: 567px;
+}
+
+.banner img {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.banner .circles {
+    position: absolute;
+    width: 93px;
+    height: 12px;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    /*background: skyblue;*/
+}
+
+.banner .circles ul li {
+    float: left;
+    width: 12px;
+    height: 12px;
+    background: url("./images/icons.png") no-repeat -100px -35px;
+    margin-right: 15px;
+}
+
+.banner .circles ul li.first {
+    background: url("./images/icons.png") no-repeat -100px -47px;
+}
+
+.banner .circles ul li:hover {
+    background-position: -112px -35px;
+}
+
+.banner .circles ul li a {
+    text-decoration: none;
+}
+
+.products {
+    margin-top: 50px;
+    position: relative;
+}
+
+.products .inner_c {
+    /*border: 1px solid red;*/
+    height: 229px;
+    border-bottom: 1px solid #DBE1E7;
+}
+
+.products .inner_c ul {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.products ul li {
+    width: 218px;
+    /*height: ;*/
+    /*border: 1px solid blue;*/
+    text-align: center;
+}
+
+.products ul li a {
+    display: block;
+    text-decoration: none;
+}
+
+.products ul li a:hover {
+    background: #38B774;
+}
+
+.products ul li a .c {
+    /*height: 40px;*/
+    line-height: 40px;
+    color: #444866;
+    font-weight: bold;
+}
+
+.products ul li a .e {
+    color: #38B774;
+    background: skyblue;
+    display: inline-block;
+    padding-right: 12px;
+    background: url("./images/arrow.png") no-repeat right center;
+}
+
+.products ul li a:hover .e {
+    background: url("./images/arrow2.png") no-repeat right center;
+}
+
+.products ul li a:hover .c, .products ul li a:hover .e {
+    color: white;
+}
+
+.products .inner_c .circles ol {
+    position: absolute;
+    width: 117px;
+    height: 12px;
+    background: white;
+    bottom: -6px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: space-around;
+}
+
+.products .inner_c .circles ol li {
+    float: left;
+    width: 12px;
+    height: 12px;
+    /*border: 1px solid red;*/
+    border-radius: 50%;
+    background: #B5C0CB;
+}
+
+.products .inner_c .circles ol li.no2 {
+    background: #2FBC71;
+}
+
+.information {
+    margin-top: 54px;
+}
+
+.information .inner_c {
+    display: flex;
+    justify-content: space-between;
+    /*border: 1px solid red;*/
+    height: 365px;
+    background: url("./images/mountain.jpg") no-repeat center bottom;
+}
+
+.information .inner_c .news, .information .inner_c .jobs {
+    width: 500px;
+
+}
+
+.information .news {
+    background: url("./images/news_hd.jpg") no-repeat center top;
+}
+
+.information .news .hd {
+    height: 119px;
+    position: relative;
+}
+
+.information .news .hd a {
+    position: absolute;
+    text-decoration: none;
+    left: 218px;
+    top: 39px;
+    width: 65px;
+    height: 28px;
+    background: #FEFEFE;
+    text-align: center;
+    line-height: 21px;
+    border-radius: 5px;
+    border: 1px solid #33B972;
+    font-size: 12PX;
+    color: #33B972;
+}
+
+.information .news .hd a:hover {
+    background: green;
+    color: white;
+}
+
+.information .news .bd ul li {
+    height: 51px;
+    line-height: 50px;
+    border-bottom: 1px solid #E0E1E5;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.information .news .bd ul li.no1 {
+    height: 40px;
+    line-height: 40px;
+}
+
+.information .news .bd ul li a {
+    text-decoration: none;
+}
+
+.information .news .bd ul li span.num {
+    color: #CAC4CF;
+    margin-right: 15px;
+}
+
+.information .news .bd ul li span.character a {
+    color: #444866;
+}
+
+.information .jobs {
+    background: url("./images/jobs_bg.jpg") no-repeat center top;
+}
+
+.information .jobs .hd {
+    height: 90px;
+    position: relative;
+}
+
+.information .jobs .hd h3 {
+    position: absolute;
+    left: 80px;
+    top: 45px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFFFFF;
+    /*font-family: "HeiTi";*/
+}
+
+.information .jobs .hd p {
+    position: absolute;
+    left: 80px;
+    top: 76px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.information .jobs .hd a {
+    position: absolute;
+    text-decoration: none;
+    left: 218px;
+    top: 42px;
+    width: 65px;
+    height: 28px;
+    background: #31BD74;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-size: 12PX;
+    color: white;
+}
+
+.information .jobs .hd a:hover {
+    background: green;
+    color: white;
+}
+
+.information .jobs .bd {
+    margin-top: 24px;
+    padding-left: 20px;
+    padding-right: 172px;
+}
+
+.information .jobs .bd h4 {
+    font-size: 14px;
+    color: #FFFFFF;
+    /*border: 1px solid blue;*/
+}
+
+.information .jobs .bd ul li {
+    height: 38px;
+    line-height: 38px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.information .jobs .bd ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer {
+    height: 92px;
+    background: #191D3A;
+}
+
+.footer .inner_c {
+    position: relative;
+}
+
+.footer .links {
+    float: left;
+    line-height: 92px;
+    padding-left: 5px;
+    padding-right: 135px;
+}
+
+.footer .links a {
+    text-decoration: none;
+    color: #6C6E7E;
+    font-size: 12px;
+}
+
+.footer .links span {
+    color: #526E68;
+}
+
+.footer .copyright {
+    line-height: 92px;
+    float: left;
+    /*background: yellow;*/
+    font-size: 12px;
+    color: #6C6E7E;
+}
+
+.footer .copyright a {
+    color: #6C6E7E;
+    text-decoration: none;
+}
+
+.footer .logo img {
+    position: absolute;
+    width: 41px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
